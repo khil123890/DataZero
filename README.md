@@ -29,7 +29,7 @@ hdparm: Optional. Required on Linux for detecting HPA/DCO sectors.
 Clone the repository and build the project using Cargo:
 
 ```Bash:
-git clone https://github.com/yourusername/DataZero.git
+git clone https://github.com/khil123890/DataZero.git
 cd DataZero
 cargo build --release
 ```
