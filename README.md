@@ -81,5 +81,7 @@ Contains the non-destructive SHA-256 verification logic, reading the initial meg
 
 # ⚠️ Disclaimer & Warning
 THIS TOOL DESTROYS DATA PERMANENTLY.
-By using the --execute flag, you are initiating irreversible data erasure. The authors and contributors of DataZero are not responsible for accidental data loss, bricked devices, or hardware damage. Always verify your target device path twice before confirming a wipe.
+By using the --execute flag, you are initiating irreversible data erasure.
+The authors and contributors of DataZero are not responsible for accidental data loss, bricked devices, or
+hardware damage. Always verify your target device path twice before confirming a wipe.
 ```
