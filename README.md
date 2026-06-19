@@ -38,7 +38,7 @@ The compiled binary will be available in the target/release/ directory.
 # 💻 Usage & Commands
 DataZero is designed with strict safety rails. If you run the program without the --execute flag, it will run in a safe Dry Run mode and will not perform any destructive operations.
 
-1. List Available Devices
+# 1. List Available Devices
 To see all local and connected block devices (including Android devices via ADB):
 
 ```Bash:
@@ -64,7 +64,7 @@ You can explicitly define the wipe method, the operator's email/ID, and where th
 cargo run --release -- --target /dev/nvme0n1 --execute --method "NIST-800-88-Purge" --operator "admin@example.com" --cert_dir "./audit_logs"
 ```
 
-#🏗️ Project Architecture
+# 🏗️ Project Architecture
 
 # main.rs: 
 The entry point. Handles CLI argument parsing via clap, logging setup, dry-run safety logic, and user confirmation prompts.
