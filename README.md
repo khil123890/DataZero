@@ -66,16 +66,16 @@ cargo run --release -- --target /dev/nvme0n1 --execute --method "NIST-800-88-Pur
 
 # 🏗️ Project Architecture
 
-- `--main.rs`: 
+- `main.rs`: 
 The entry point. Handles CLI argument parsing via clap, logging setup, dry-run safety logic, and user confirmation prompts.
 
-- `--device.rs`: 
+- `device.rs`: 
 Handles the complex enumeration of block devices. It uses OS-specific commands (lsblk on Unix, wmic on Windows) and adb shell commands to identify media types, serial numbers, and device paths.
 
-- `--ops.rs & cert.rs`:
+- `ops.rs & cert.rs`:
 Manages the generation of ECDSA P-256 public/private keys and constructs the cryptographically signed wipe_cert.json to prove the sanitization event occurred.
 
-- `--util.rs`: 
+- `util.rs`: 
 Contains the non-destructive SHA-256 verification logic, reading the initial megabyte of a drive (locally or via adb exec-out dd) to confirm the wipe.
 ```
 
